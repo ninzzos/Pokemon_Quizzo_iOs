@@ -169,6 +169,10 @@
 		40FB82141D8CC2D6003D2B01 /* wigglytuff.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FB817B1D8CC2D6003D2B01 /* wigglytuff.png */; };
 		40FB82151D8CC2D6003D2B01 /* zapdos.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FB817C1D8CC2D6003D2B01 /* zapdos.png */; };
 		40FB82161D8CC2D6003D2B01 /* zubat.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FB817D1D8CC2D6003D2B01 /* zubat.png */; };
+		40FB821C1D8CE012003D2B01 /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB821B1D8CE012003D2B01 /* jsonParser.swift */; };
+		40FB82211D8CE404003D2B01 /* johto.json in Resources */ = {isa = PBXBuildFile; fileRef = 40FB821F1D8CE404003D2B01 /* johto.json */; };
+		40FB82221D8CE404003D2B01 /* kanto.json in Resources */ = {isa = PBXBuildFile; fileRef = 40FB82201D8CE404003D2B01 /* kanto.json */; };
+		40FB82251D8CF66D003D2B01 /* pokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB82241D8CF66D003D2B01 /* pokeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -357,6 +361,10 @@
 		40FB817B1D8CC2D6003D2B01 /* wigglytuff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wigglytuff.png; path = ../../assets/img/kanto/wigglytuff.png; sourceTree = "<group>"; };
 		40FB817C1D8CC2D6003D2B01 /* zapdos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zapdos.png; path = ../../assets/img/kanto/zapdos.png; sourceTree = "<group>"; };
 		40FB817D1D8CC2D6003D2B01 /* zubat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zubat.png; path = ../../assets/img/kanto/zubat.png; sourceTree = "<group>"; };
+		40FB821B1D8CE012003D2B01 /* jsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
+		40FB821F1D8CE404003D2B01 /* johto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = johto.json; path = ../../assets/json/johto.json; sourceTree = "<group>"; };
+		40FB82201D8CE404003D2B01 /* kanto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = kanto.json; path = ../../assets/json/kanto.json; sourceTree = "<group>"; };
+		40FB82241D8CF66D003D2B01 /* pokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pokeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,7 +415,9 @@
 		40FB80AE1D8CAA82003D2B01 /* Pokemon Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				40FB80E31D8CC23A003D2B01 /* images */,
+				40FB82231D8CF651003D2B01 /* custom Cells */,
+				40FB821D1D8CE39C003D2B01 /* assets */,
+				40FB821A1D8CDFE7003D2B01 /* parser */,
 				40FB80E21D8CC014003D2B01 /* controllers */,
 				40FB80AF1D8CAA82003D2B01 /* AppDelegate.swift */,
 				40FB80B31D8CAA82003D2B01 /* Main.storyboard */,
@@ -446,12 +456,12 @@
 			name = controllers;
 			sourceTree = "<group>";
 		};
-		40FB80E31D8CC23A003D2B01 /* images */ = {
+		40FB80E31D8CC23A003D2B01 /* img */ = {
 			isa = PBXGroup;
 			children = (
 				40FB80E41D8CC2B2003D2B01 /* kanto */,
 			);
-			name = images;
+			name = img;
 			sourceTree = "<group>";
 		};
 		40FB80E41D8CC2B2003D2B01 /* kanto */ = {
@@ -614,6 +624,40 @@
 			name = kanto;
 			sourceTree = "<group>";
 		};
+		40FB821A1D8CDFE7003D2B01 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				40FB821B1D8CE012003D2B01 /* jsonParser.swift */,
+			);
+			name = parser;
+			sourceTree = "<group>";
+		};
+		40FB821D1D8CE39C003D2B01 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				40FB821E1D8CE3AF003D2B01 /* json */,
+				40FB80E31D8CC23A003D2B01 /* img */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		40FB821E1D8CE3AF003D2B01 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				40FB821F1D8CE404003D2B01 /* johto.json */,
+				40FB82201D8CE404003D2B01 /* kanto.json */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		40FB82231D8CF651003D2B01 /* custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				40FB82241D8CF66D003D2B01 /* pokeCell.swift */,
+			);
+			name = "custom Cells";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -725,6 +769,7 @@
 				40FB81F71D8CC2D6003D2B01 /* sandslash.png in Resources */,
 				40FB81D71D8CC2D6003D2B01 /* nidoqueen.png in Resources */,
 				40FB81ED1D8CC2D6003D2B01 /* porygon.png in Resources */,
+				40FB82221D8CE404003D2B01 /* kanto.json in Resources */,
 				40FB81F11D8CC2D6003D2B01 /* rapidash.png in Resources */,
 				40FB81C31D8CC2D6003D2B01 /* lickitung.png in Resources */,
 				40FB81C41D8CC2D6003D2B01 /* machamp.png in Resources */,
@@ -806,6 +851,7 @@
 				40FB81C11D8CC2D6003D2B01 /* krabby.png in Resources */,
 				40FB81AA1D8CC2D6003D2B01 /* goldeen.png in Resources */,
 				40FB81EC1D8CC2D6003D2B01 /* ponyta.png in Resources */,
+				40FB82211D8CE404003D2B01 /* johto.json in Resources */,
 				40FB81991D8CC2D6003D2B01 /* dratini.png in Resources */,
 				40FB81811D8CC2D6003D2B01 /* arbok.png in Resources */,
 				40FB81901D8CC2D6003D2B01 /* cloyster.png in Resources */,
@@ -899,6 +945,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				40FB80B81D8CAA82003D2B01 /* Pokemon_Quiz.xcdatamodeld in Sources */,
+				40FB821C1D8CE012003D2B01 /* jsonParser.swift in Sources */,
+				40FB82251D8CF66D003D2B01 /* pokeCell.swift in Sources */,
 				40FB80B21D8CAA82003D2B01 /* ViewController.swift in Sources */,
 				40FB80B01D8CAA82003D2B01 /* AppDelegate.swift in Sources */,
 				40FB80E11D8CC00A003D2B01 /* quizzoController.swift in Sources */,

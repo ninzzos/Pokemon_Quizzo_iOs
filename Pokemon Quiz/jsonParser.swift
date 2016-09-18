@@ -11,11 +11,11 @@ import Foundation
 
 class jsonParser {
     
-    static func getJsonData() -> [NSDictionary]{
+    static func getJsonData(region:String) -> [NSDictionary]{
         
         var jsonData:[NSDictionary] = [NSDictionary()]
         
-        guard let path = NSBundle.mainBundle().pathForResource("kanto", ofType: "json") else {
+        guard let path = NSBundle.mainBundle().pathForResource(region, ofType: "json") else {
             return jsonData
         }
         

@@ -18,42 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Le-6i-paj">
-                                <rect key="frame" x="93" y="91" width="414" height="146"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bPI-hX-lna">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can You Name 'Em All?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIN-gs-cSx">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="40"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZe-tg-m1W">
-                                                <rect key="frame" x="173" y="56" width="69" height="30"/>
-                                                <state key="normal" title="Start Quiz"/>
-                                                <connections>
-                                                    <segue destination="u4c-V2-hlw" kind="show" id="P54-6j-7jW"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSc-4q-wt7">
-                                                <rect key="frame" x="180" y="86" width="55" height="30"/>
-                                                <state key="normal" title="Regions"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMe-N3-ixI">
-                                                <rect key="frame" x="186" y="116" width="42" height="30"/>
-                                                <state key="normal" title="About"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can You Name 'Em All?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIN-gs-cSx">
+                                <rect key="frame" x="20" y="89" width="560" height="56"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZe-tg-m1W">
+                                <rect key="frame" x="266" y="198" width="69" height="30"/>
+                                <state key="normal" title="Start Quiz"/>
+                                <connections>
+                                    <segue destination="u4c-V2-hlw" kind="show" id="P54-6j-7jW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSc-4q-wt7">
+                                <rect key="frame" x="273" y="236" width="55" height="30"/>
+                                <state key="normal" title="Regions"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMe-N3-ixI">
+                                <rect key="frame" x="279" y="274" width="42" height="30"/>
+                                <state key="normal" title="About"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Le-6i-paj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1r1-uO-KVg"/>
-                            <constraint firstItem="3Le-6i-paj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="Nlx-hQ-96F"/>
+                            <constraint firstItem="fSc-4q-wt7" firstAttribute="top" secondItem="UZe-tg-m1W" secondAttribute="bottom" constant="8" symbolic="YES" id="0F0-Gj-hcx"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9NN-cg-twJ"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Cha-K9-JD5"/>
+                            <constraint firstItem="UZe-tg-m1W" firstAttribute="centerX" secondItem="MIN-gs-cSx" secondAttribute="centerX" id="Csg-Lx-vXO"/>
+                            <constraint firstItem="fSc-4q-wt7" firstAttribute="centerX" secondItem="wMe-N3-ixI" secondAttribute="centerX" id="ciq-kj-x25"/>
+                            <constraint firstItem="UZe-tg-m1W" firstAttribute="top" secondItem="MIN-gs-cSx" secondAttribute="bottom" constant="53" id="fUx-cg-rcx"/>
+                            <constraint firstItem="UZe-tg-m1W" firstAttribute="centerX" secondItem="fSc-4q-wt7" secondAttribute="centerX" id="kDC-Ca-e2q"/>
+                            <constraint firstItem="wMe-N3-ixI" firstAttribute="top" secondItem="fSc-4q-wt7" secondAttribute="bottom" constant="8" symbolic="YES" id="l19-4y-Qvb"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="od7-8C-ENu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="31i-Fl-Wsw"/>
@@ -79,28 +76,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kby-9x-Pn9">
-                                <rect key="frame" x="536" y="517" width="44" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="NBP-83-G4m"/>
-                                </constraints>
-                                <state key="normal" title="Add"/>
-                                <connections>
-                                    <action selector="btnAdd:" destination="u4c-V2-hlw" eventType="touchUpInside" id="7aD-4L-gxM"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="evi-qe-tGz">
                                 <rect key="frame" x="0.0" y="64" width="600" height="445"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="0.0" id="yuB-WH-MLh">
-                                    <size key="itemSize" width="205" height="139"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="1" id="yuB-WH-MLh">
+                                    <size key="itemSize" width="184" height="180"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="10" maxX="16" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="spatial" reuseIdentifier="gridCellTemplate" id="Am2-cj-S9s" customClass="pokeCell" customModule="Pokemon_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="180" height="180"/>
+                                        <rect key="frame" x="16" y="10" width="180" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
@@ -112,13 +99,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOV-pO-juD">
                                                     <rect key="frame" x="8" y="151" width="164" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="0.33454959920938609" blue="0.3835318176491761" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="vOV-pO-juD" firstAttribute="bottom" secondItem="Am2-cj-S9s" secondAttribute="bottomMargin" id="2gt-gA-qiw"/>
                                             <constraint firstItem="cVh-59-DrP" firstAttribute="leading" secondItem="Am2-cj-S9s" secondAttribute="leading" id="A9Q-c4-i0K"/>
@@ -136,6 +123,16 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kby-9x-Pn9">
+                                <rect key="frame" x="536" y="517" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="NBP-83-G4m"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="btnAdd:" destination="u4c-V2-hlw" eventType="touchUpInside" id="7aD-4L-gxM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -153,6 +150,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnAdd" destination="Kby-9x-Pn9" id="1gz-qT-Amd"/>
                         <outlet property="gridPokemon" destination="evi-qe-tGz" id="EOd-cU-njj"/>
                         <outlet property="txtEntry" destination="h8j-Wd-71Z" id="oZT-15-5Un"/>
                     </connections>

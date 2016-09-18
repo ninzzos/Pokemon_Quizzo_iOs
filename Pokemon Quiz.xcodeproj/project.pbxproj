@@ -1174,6 +1174,7 @@
 				40FB80D91D8CAA83003D2B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40FB80DA1D8CAA83003D2B01 /* Build configuration list for PBXNativeTarget "Pokemon QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -1182,6 +1183,7 @@
 				40FB80DC1D8CAA83003D2B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40FB80DD1D8CAA83003D2B01 /* Build configuration list for PBXNativeTarget "Pokemon QuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -1190,6 +1192,7 @@
 				40FB80DF1D8CAA83003D2B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

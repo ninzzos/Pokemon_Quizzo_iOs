@@ -1,0 +1,1579 @@
+[
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/bulbasaur.png",
+    "pokedexNumber": 1,
+    "alternative": "bulbasaur",
+    "name": "Bulbasaur",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/ivysaur.png",
+    "pokedexNumber": 2,
+    "alternative": "ivysaur",
+    "name": "Ivysaur",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/venusaur.png",
+    "pokedexNumber": 3,
+    "alternative": "venusaur",
+    "name": "Venusaur",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/charmander.png",
+    "pokedexNumber": 4,
+    "alternative": "charmander",
+    "name": "Charmander",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/charmeleon.png",
+    "pokedexNumber": 5,
+    "alternative": "charmeleon",
+    "name": "Charmeleon",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "image": "img/kanto/charizard.png",
+    "pokedexNumber": 6,
+    "alternative": "charizard",
+    "name": "Charizard",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/squirtle.png",
+    "pokedexNumber": 7,
+    "alternative": "squirtle",
+    "name": "Squirtle",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/wartortle.png",
+    "pokedexNumber": 8,
+    "alternative": "wartortle",
+    "name": "Wartortle",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/blastoise.png",
+    "pokedexNumber": 9,
+    "alternative": "blastoise",
+    "name": "Blastoise",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug"
+    ],
+    "image": "img/kanto/caterpie.png",
+    "pokedexNumber": 10,
+    "alternative": "caterpie",
+    "name": "Caterpie",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug"
+    ],
+    "image": "img/kanto/metapod.png",
+    "pokedexNumber": 11,
+    "alternative": "metapod",
+    "name": "Metapod",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "image": "img/kanto/butterfree.png",
+    "pokedexNumber": 12,
+    "alternative": "butterfree",
+    "name": "Butterfree",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "image": "img/kanto/weedle.png",
+    "pokedexNumber": 13,
+    "alternative": "weedle",
+    "name": "Weedle",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "image": "img/kanto/kakuna.png",
+    "pokedexNumber": 14,
+    "alternative": "kakuna",
+    "name": "Kakuna",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "image": "img/kanto/beedrill.png",
+    "pokedexNumber": 15,
+    "alternative": "beedrill",
+    "name": "Beedrill",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "img/kanto/pidgey.png",
+    "pokedexNumber": 16,
+    "alternative": "pidgey",
+    "name": "Pidgey",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "img/kanto/pidgeotto.png",
+    "pokedexNumber": 17,
+    "alternative": "pidgeotto",
+    "name": "Pidgeotto",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "img/kanto/pidgeot.png",
+    "pokedexNumber": 18,
+    "alternative": "pidgeot",
+    "name": "Pidgeot",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/rattata.png",
+    "pokedexNumber": 19,
+    "alternative": "rattata",
+    "name": "Rattata",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/raticate.png",
+    "pokedexNumber": 20,
+    "alternative": "raticate",
+    "name": "Raticate",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "img/kanto/spearow.png",
+    "pokedexNumber": 21,
+    "alternative": "spearow",
+    "name": "Spearow",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "img/kanto/fearow.png",
+    "pokedexNumber": 22,
+    "alternative": "fearow",
+    "name": "Fearow",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/ekans.png",
+    "pokedexNumber": 23,
+    "alternative": "ekans",
+    "name": "Ekans",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/arbok.png",
+    "pokedexNumber": 24,
+    "alternative": "arbok",
+    "name": "Arbok",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric"
+    ],
+    "image": "img/kanto/pikachu.png",
+    "pokedexNumber": 25,
+    "alternative": "pikachu",
+    "name": "Pikachu",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric"
+    ],
+    "image": "img/kanto/raichu.png",
+    "pokedexNumber": 26,
+    "alternative": "raichu",
+    "name": "Raichu",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ground"
+    ],
+    "image": "img/kanto/sandshrew.png",
+    "pokedexNumber": 27,
+    "alternative": "sandshrew",
+    "name": "Sandshrew",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ground"
+    ],
+    "image": "img/kanto/sandslash.png",
+    "pokedexNumber": 28,
+    "alternative": "sandslash",
+    "name": "Sandslash",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/nidoranf.png",
+    "pokedexNumber": 29,
+    "alternative": "nidoran",
+    "name": "Nidoran♀",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/nidorina.png",
+    "pokedexNumber": 30,
+    "alternative": "nidorina",
+    "name": "Nidorina",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "image": "img/kanto/nidoqueen.png",
+    "pokedexNumber": 31,
+    "alternative": "nidoqueen",
+    "name": "Nidoqueen",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/nidoranm.png",
+    "pokedexNumber": 32,
+    "alternative": "nidoran",
+    "name": "Nidoran♂",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/nidorino.png",
+    "pokedexNumber": 33,
+    "alternative": "nidorino",
+    "name": "Nidorino",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison",
+      "ground"
+    ],
+    "image": "img/kanto/nidoking.png",
+    "pokedexNumber": 34,
+    "alternative": "nidoking",
+    "name": "Nidoking",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fairy"
+    ],
+    "image": "img/kanto/clefairy.png",
+    "pokedexNumber": 35,
+    "alternative": "clefairy",
+    "name": "Clefairy",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fairy"
+    ],
+    "image": "img/kanto/clefable.png",
+    "pokedexNumber": 36,
+    "alternative": "clefable",
+    "name": "Clefable",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/vulpix.png",
+    "pokedexNumber": 37,
+    "alternative": "vulpix",
+    "name": "Vulpix",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/ninetales.png",
+    "pokedexNumber": 38,
+    "alternative": "ninetales",
+    "name": "Ninetales",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "image": "img/kanto/jigglypuff.png",
+    "pokedexNumber": 39,
+    "alternative": "jigglypuff",
+    "name": "Jigglypuff",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "image": "img/kanto/wigglytuff.png",
+    "pokedexNumber": 40,
+    "alternative": "wigglytuff",
+    "name": "Wigglytuff",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "image": "img/kanto/zubat.png",
+    "pokedexNumber": 41,
+    "alternative": "zubat",
+    "name": "Zubat",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison",
+      "flying"
+    ],
+    "image": "img/kanto/golbat.png",
+    "pokedexNumber": 42,
+    "alternative": "golbat",
+    "name": "Golbat",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/oddish.png",
+    "pokedexNumber": 43,
+    "alternative": "oddish",
+    "name": "Oddish",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/gloom.png",
+    "pokedexNumber": 44,
+    "alternative": "gloom",
+    "name": "Gloom",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/vileplume.png",
+    "pokedexNumber": 45,
+    "alternative": "vileplume",
+    "name": "Vileplume",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "image": "img/kanto/paras.png",
+    "pokedexNumber": 46,
+    "alternative": "paras",
+    "name": "Paras",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "grass"
+    ],
+    "image": "img/kanto/parasect.png",
+    "pokedexNumber": 47,
+    "alternative": "parasect",
+    "name": "Parasect",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "image": "img/kanto/venonat.png",
+    "pokedexNumber": 48,
+    "alternative": "venonat",
+    "name": "Venonat",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "image": "img/kanto/venomoth.png",
+    "pokedexNumber": 49,
+    "alternative": "venomoth",
+    "name": "Venomoth",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ground"
+    ],
+    "image": "img/kanto/diglett.png",
+    "pokedexNumber": 50,
+    "alternative": "diglett",
+    "name": "Diglett",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ground"
+    ],
+    "image": "img/kanto/dugtrio.png",
+    "pokedexNumber": 51,
+    "alternative": "dugtrio",
+    "name": "Dugtrio",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/meowth.png",
+    "pokedexNumber": 52,
+    "alternative": "meowth",
+    "name": "Meowth",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/persian.png",
+    "pokedexNumber": 53,
+    "alternative": "persian",
+    "name": "Persian",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/psyduck.png",
+    "pokedexNumber": 54,
+    "alternative": "psyduck",
+    "name": "Psyduck",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/golduck.png",
+    "pokedexNumber": 55,
+    "alternative": "golduck",
+    "name": "Golduck",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fighting"
+    ],
+    "image": "img/kanto/mankey.png",
+    "pokedexNumber": 56,
+    "alternative": "mankey",
+    "name": "Mankey",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fighting"
+    ],
+    "image": "img/kanto/primeape.png",
+    "pokedexNumber": 57,
+    "alternative": "primeape",
+    "name": "Primeape",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/growlithe.png",
+    "pokedexNumber": 58,
+    "alternative": "growlithe",
+    "name": "Growlithe",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/arcanine.png",
+    "pokedexNumber": 59,
+    "alternative": "arcanine",
+    "name": "Arcanine",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/poliwag.png",
+    "pokedexNumber": 60,
+    "alternative": "poliwag",
+    "name": "Poliwag",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/poliwhirl.png",
+    "pokedexNumber": 61,
+    "alternative": "poliwhirl",
+    "name": "Poliwhirl",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "image": "img/kanto/poliwrath.png",
+    "pokedexNumber": 62,
+    "alternative": "poliwrath",
+    "name": "Poliwrath",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "psychic"
+    ],
+    "image": "img/kanto/abra.png",
+    "pokedexNumber": 63,
+    "alternative": "abra",
+    "name": "Abra",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "psychic"
+    ],
+    "image": "img/kanto/kadabra.png",
+    "pokedexNumber": 64,
+    "alternative": "kadabra",
+    "name": "Kadabra",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "psychic"
+    ],
+    "image": "img/kanto/alakazam.png",
+    "pokedexNumber": 65,
+    "alternative": "alakazam",
+    "name": "Alakazam",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fighting"
+    ],
+    "image": "img/kanto/machop.png",
+    "pokedexNumber": 66,
+    "alternative": "machop",
+    "name": "Machop",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fighting"
+    ],
+    "image": "img/kanto/machoke.png",
+    "pokedexNumber": 67,
+    "alternative": "machoke",
+    "name": "Machoke",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fighting"
+    ],
+    "image": "img/kanto/machamp.png",
+    "pokedexNumber": 68,
+    "alternative": "machamp",
+    "name": "Machamp",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/bellsprout.png",
+    "pokedexNumber": 69,
+    "alternative": "bellsprout",
+    "name": "Bellsprout",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/weepinbell.png",
+    "pokedexNumber": 70,
+    "alternative": "weepinbell",
+    "name": "Weepinbell",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "image": "img/kanto/victreebel.png",
+    "pokedexNumber": 71,
+    "alternative": "victreebel",
+    "name": "Victreebel",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "poison"
+    ],
+    "image": "img/kanto/tentacool.png",
+    "pokedexNumber": 72,
+    "alternative": "tentacool",
+    "name": "Tentacool",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "poison"
+    ],
+    "image": "img/kanto/tentacruel.png",
+    "pokedexNumber": 73,
+    "alternative": "tentacruel",
+    "name": "Tentacruel",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "image": "img/kanto/geodude.png",
+    "pokedexNumber": 74,
+    "alternative": "geodude",
+    "name": "Geodude",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "image": "img/kanto/graveler.png",
+    "pokedexNumber": 75,
+    "alternative": "graveler",
+    "name": "Graveler",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "image": "img/kanto/golem.png",
+    "pokedexNumber": 76,
+    "alternative": "golem",
+    "name": "Golem",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/ponyta.png",
+    "pokedexNumber": 77,
+    "alternative": "ponyta",
+    "name": "Ponyta",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/rapidash.png",
+    "pokedexNumber": 78,
+    "alternative": "rapidash",
+    "name": "Rapidash",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "image": "img/kanto/slowpoke.png",
+    "pokedexNumber": 79,
+    "alternative": "slowpoke",
+    "name": "Slowpoke",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "image": "img/kanto/slowbro.png",
+    "pokedexNumber": 80,
+    "alternative": "slowbro",
+    "name": "Slowbro",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "image": "img/kanto/magnemite.png",
+    "pokedexNumber": 81,
+    "alternative": "magnemite",
+    "name": "Magnemite",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "image": "img/kanto/magneton.png",
+    "pokedexNumber": 82,
+    "alternative": "magneton",
+    "name": "Magneton",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "img/kanto/farfetchd.png",
+    "pokedexNumber": 83,
+    "alternative": "farfetchd",
+    "name": "Farfetch'd",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "img/kanto/doduo.png",
+    "pokedexNumber": 84,
+    "alternative": "doduo",
+    "name": "Doduo",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "image": "img/kanto/dodrio.png",
+    "pokedexNumber": 85,
+    "alternative": "dodrio",
+    "name": "Dodrio",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/seel.png",
+    "pokedexNumber": 86,
+    "alternative": "seel",
+    "name": "Seel",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "ice"
+    ],
+    "image": "img/kanto/dewgong.png",
+    "pokedexNumber": 87,
+    "alternative": "dewgong",
+    "name": "Dewgong",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/grimer.png",
+    "pokedexNumber": 88,
+    "alternative": "grimer",
+    "name": "Grimer",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/muk.png",
+    "pokedexNumber": 89,
+    "alternative": "muk",
+    "name": "Muk",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/shellder.png",
+    "pokedexNumber": 90,
+    "alternative": "shellder",
+    "name": "Shellder",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "ice"
+    ],
+    "image": "img/kanto/cloyster.png",
+    "pokedexNumber": 91,
+    "alternative": "cloyster",
+    "name": "Cloyster",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "image": "img/kanto/gastly.png",
+    "pokedexNumber": 92,
+    "alternative": "gastly",
+    "name": "Gastly",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "image": "img/kanto/haunter.png",
+    "pokedexNumber": 93,
+    "alternative": "haunter",
+    "name": "Haunter",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "image": "img/kanto/gengar.png",
+    "pokedexNumber": 94,
+    "alternative": "gengar",
+    "name": "Gengar",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "image": "img/kanto/onix.png",
+    "pokedexNumber": 95,
+    "alternative": "onix",
+    "name": "Onix",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "psychic"
+    ],
+    "image": "img/kanto/drowzee.png",
+    "pokedexNumber": 96,
+    "alternative": "drowzee",
+    "name": "Drowzee",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "psychic"
+    ],
+    "image": "img/kanto/hypno.png",
+    "pokedexNumber": 97,
+    "alternative": "hypno",
+    "name": "Hypno",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/krabby.png",
+    "pokedexNumber": 98,
+    "alternative": "krabby",
+    "name": "Krabby",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/kingler.png",
+    "pokedexNumber": 99,
+    "alternative": "kingler",
+    "name": "Kingler",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric"
+    ],
+    "image": "img/kanto/voltorb.png",
+    "pokedexNumber": 100,
+    "alternative": "voltorb",
+    "name": "Voltorb",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric"
+    ],
+    "image": "img/kanto/electrode.png",
+    "pokedexNumber": 101,
+    "alternative": "electrode",
+    "name": "Electrode",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "image": "img/kanto/exeggcute.png",
+    "pokedexNumber": 102,
+    "alternative": "exeggcute",
+    "name": "Exeggcute",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "image": "img/kanto/exeggutor.png",
+    "pokedexNumber": 103,
+    "alternative": "exeggutor",
+    "name": "Exeggutor",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ground"
+    ],
+    "image": "img/kanto/cubone.png",
+    "pokedexNumber": 104,
+    "alternative": "cubone",
+    "name": "Cubone",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ground"
+    ],
+    "image": "img/kanto/marowak.png",
+    "pokedexNumber": 105,
+    "alternative": "marowak",
+    "name": "Marowak",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fighting"
+    ],
+    "image": "img/kanto/hitmonlee.png",
+    "pokedexNumber": 106,
+    "alternative": "hitmonlee",
+    "name": "Hitmonlee",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fighting"
+    ],
+    "image": "img/kanto/hitmonchan.png",
+    "pokedexNumber": 107,
+    "alternative": "hitmonchan",
+    "name": "Hitmonchan",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/lickitung.png",
+    "pokedexNumber": 108,
+    "alternative": "lickitung",
+    "name": "Lickitung",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/koffing.png",
+    "pokedexNumber": 109,
+    "alternative": "koffing",
+    "name": "Koffing",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "poison"
+    ],
+    "image": "img/kanto/weezing.png",
+    "pokedexNumber": 110,
+    "alternative": "weezing",
+    "name": "Weezing",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "image": "img/kanto/rhyhorn.png",
+    "pokedexNumber": 111,
+    "alternative": "rhyhorn",
+    "name": "Rhyhorn",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "image": "img/kanto/rhydon.png",
+    "pokedexNumber": 112,
+    "alternative": "rhydon",
+    "name": "Rhydon",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/chansey.png",
+    "pokedexNumber": 113,
+    "alternative": "chansey",
+    "name": "Chansey",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "grass"
+    ],
+    "image": "img/kanto/tangela.png",
+    "pokedexNumber": 114,
+    "alternative": "tangela",
+    "name": "Tangela",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/kangaskhan.png",
+    "pokedexNumber": 115,
+    "alternative": "kangaskhan",
+    "name": "Kangaskhan",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/horsea.png",
+    "pokedexNumber": 116,
+    "alternative": "horsea",
+    "name": "Horsea",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/seadra.png",
+    "pokedexNumber": 117,
+    "alternative": "seadra",
+    "name": "Seadra",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/goldeen.png",
+    "pokedexNumber": 118,
+    "alternative": "goldeen",
+    "name": "Goldeen",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/seaking.png",
+    "pokedexNumber": 119,
+    "alternative": "seaking",
+    "name": "Seaking",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/staryu.png",
+    "pokedexNumber": 120,
+    "alternative": "staryu",
+    "name": "Staryu",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "image": "img/kanto/starmie.png",
+    "pokedexNumber": 121,
+    "alternative": "starmie",
+    "name": "Starmie",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "image": "img/kanto/mrmime.png",
+    "pokedexNumber": 122,
+    "alternative": "mr mime",
+    "name": "Mr. Mime",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "image": "img/kanto/scyther.png",
+    "pokedexNumber": 123,
+    "alternative": "scyther",
+    "name": "Scyther",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "image": "img/kanto/jynx.png",
+    "pokedexNumber": 124,
+    "alternative": "jynx",
+    "name": "Jynx",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric"
+    ],
+    "image": "img/kanto/electabuzz.png",
+    "pokedexNumber": 125,
+    "alternative": "electabuzz",
+    "name": "Electabuzz",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/magmar.png",
+    "pokedexNumber": 126,
+    "alternative": "magmar",
+    "name": "Magmar",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "bug"
+    ],
+    "image": "img/kanto/pinsir.png",
+    "pokedexNumber": 127,
+    "alternative": "pinsir",
+    "name": "Pinsir",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/tauros.png",
+    "pokedexNumber": 128,
+    "alternative": "tauros",
+    "name": "Tauros",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/magikarp.png",
+    "pokedexNumber": 129,
+    "alternative": "magikarp",
+    "name": "Magikarp",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "flying"
+    ],
+    "image": "img/kanto/gyarados.png",
+    "pokedexNumber": 130,
+    "alternative": "gyarados",
+    "name": "Gyarados",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water",
+      "ice"
+    ],
+    "image": "img/kanto/lapras.png",
+    "pokedexNumber": 131,
+    "alternative": "lapras",
+    "name": "Lapras",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/ditto.png",
+    "pokedexNumber": 132,
+    "alternative": "ditto",
+    "name": "Ditto",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/eevee.png",
+    "pokedexNumber": 133,
+    "alternative": "eevee",
+    "name": "Eevee",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "water"
+    ],
+    "image": "img/kanto/vaporeon.png",
+    "pokedexNumber": 134,
+    "alternative": "vaporeon",
+    "name": "Vaporeon",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric"
+    ],
+    "image": "img/kanto/jolteon.png",
+    "pokedexNumber": 135,
+    "alternative": "jolteon",
+    "name": "Jolteon",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire"
+    ],
+    "image": "img/kanto/flareon.png",
+    "pokedexNumber": 136,
+    "alternative": "flareon",
+    "name": "Flareon",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/porygon.png",
+    "pokedexNumber": 137,
+    "alternative": "porygon",
+    "name": "Porygon",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "water"
+    ],
+    "image": "img/kanto/omanyte.png",
+    "pokedexNumber": 138,
+    "alternative": "omanyte",
+    "name": "Omanyte",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "water"
+    ],
+    "image": "img/kanto/omastar.png",
+    "pokedexNumber": 139,
+    "alternative": "omastar",
+    "name": "Omastar",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "water"
+    ],
+    "image": "img/kanto/kabuto.png",
+    "pokedexNumber": 140,
+    "alternative": "kabuto",
+    "name": "Kabuto",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "water"
+    ],
+    "image": "img/kanto/kabutops.png",
+    "pokedexNumber": 141,
+    "alternative": "kabutops",
+    "name": "Kabutops",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "image": "img/kanto/aerodactyl.png",
+    "pokedexNumber": 142,
+    "alternative": "aerodactyl",
+    "name": "Aerodactyl",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "normal"
+    ],
+    "image": "img/kanto/snorlax.png",
+    "pokedexNumber": 143,
+    "alternative": "snorlax",
+    "name": "Snorlax",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "image": "img/kanto/articuno.png",
+    "pokedexNumber": 144,
+    "alternative": "articuno",
+    "name": "Articuno",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "image": "img/kanto/zapdos.png",
+    "pokedexNumber": 145,
+    "alternative": "zapdos",
+    "name": "Zapdos",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "image": "img/kanto/moltres.png",
+    "pokedexNumber": 146,
+    "alternative": "moltres",
+    "name": "Moltres",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "dragon"
+    ],
+    "image": "img/kanto/dratini.png",
+    "pokedexNumber": 147,
+    "alternative": "dratini",
+    "name": "Dratini",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "dragon"
+    ],
+    "image": "img/kanto/dragonair.png",
+    "pokedexNumber": 148,
+    "alternative": "dragonair",
+    "name": "Dragonair",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "image": "img/kanto/dragonite.png",
+    "pokedexNumber": 149,
+    "alternative": "dragonite",
+    "name": "Dragonite",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "psychic"
+    ],
+    "image": "img/kanto/mewtwo.png",
+    "pokedexNumber": 150,
+    "alternative": "mewtwo",
+    "name": "Mewtwo",
+    "region":"kanto"
+  },
+  {
+    "types": [
+      "psychic"
+    ],
+    "image": "img/kanto/mew.png",
+    "pokedexNumber": 151,
+    "alternative": "mew",
+    "name": "Mew",
+    "region":"kanto"
+  }
+]

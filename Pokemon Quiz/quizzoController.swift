@@ -12,7 +12,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     
     @IBOutlet weak var gridPokemon: UICollectionView!
     @IBOutlet weak var txtEntry: UITextField!
-    let size = (UIScreen.mainScreen().bounds.width)
+    let size = (UIScreen.main.bounds.width)
     var pokedexSize:Int = 0
     var data:[NSDictionary] = [[:]]
     var currentData:[NSDictionary] = [[:]]
@@ -36,7 +36,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     
     //timer Stuff
     var secondsRemaining:Int = 0
-    var timer:NSTimer = NSTimer()
+    var timer:Timer = Timer()
     
     override func viewDidLoad() {
         
@@ -49,8 +49,8 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         self.getPokedex("kanto")
         self.timerManager()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(quizzoController.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(quizzoController.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(quizzoController.keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil);
+        NotificationCenter.default.addObserver(self, selector: #selector(quizzoController.keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil);
         
         self.txtEntry.placeholder = "0/\(self.pokedexSize)"
         self.gridPokemon.dataSource = self
@@ -60,33 +60,33 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     }
     
     //boton de mierda no funciona por un bug de xcode -.-
-    @IBAction func btnAddClick(sender:AnyObject){
+    @IBAction func btnAddClick(_ sender:AnyObject){
         self.presentBanner("Esta es una prueba", message: "osea, una prueba man")
     }
     
     //UICollectionView
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.data.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("gridCellTemplate", forIndexPath: indexPath) as! pokeCell
-        let currentItem:NSDictionary = self.data[indexPath.item]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "gridCellTemplate", for: indexPath) as! pokeCell
+        let currentItem:NSDictionary = self.data[(indexPath as NSIndexPath).item]
         var imgPath = (currentItem["image"] as! String)
         
-        imgPath.removeRange(imgPath.startIndex..<imgPath.startIndex.advancedBy(10))
+        imgPath.removeSubrange(imgPath.startIndex..<imgPath.characters.index(imgPath.startIndex, offsetBy: 10))
         
         cell.lblName.text = (currentItem["name"] as! String)
         cell.imgDisplay.image = UIImage(contentsOfFile: self.fetchImagePath(imgPath))
         
         
-        let type:String! = (currentItem["types"] as! NSArray?)?.objectAtIndex(0) as! String
+        let type:String! = (currentItem["types"] as! NSArray?)?.object(at: 0) as! String
         
         cell.backgroundColor = self.UIColorFromRGB(self.typeColors[type] as! UInt)
         
@@ -94,21 +94,21 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     }
     
     func scrollGridToBottom(){
-        let section:Int = (self.gridPokemon.numberOfSections()-1)
+        let section:Int = (self.gridPokemon.numberOfSections-1)
         let itemNumber:Int = collectionView(self.gridPokemon, numberOfItemsInSection: section)-1
-        let lastIndex:NSIndexPath = NSIndexPath(forItem: itemNumber, inSection: section)
-        self.gridPokemon.scrollToItemAtIndexPath(lastIndex, atScrollPosition: UICollectionViewScrollPosition.Bottom, animated: true)
+        let lastIndex:IndexPath = IndexPath(item: itemNumber, section: section)
+        self.gridPokemon.scrollToItem(at: lastIndex, at: UICollectionViewScrollPosition.bottom, animated: true)
     }
     
     // TextField Delegate
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.pokemonExists()
         return true;
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
-        textField.textColor = UIColor.blackColor()
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.textColor = UIColor.black
     }
     
     //helper functions
@@ -121,9 +121,9 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
                 for tmp in self.currentData {
                     if(entry == tmp["name"] as! String || entry == tmp["alternative"] as! String){
                         self.txtEntry.text = ""
-                        self.txtEntry.textColor = UIColor.blackColor()
+                        self.txtEntry.textColor = UIColor.black
                         self.data.append(tmp)
-                        self.currentData.removeAtIndex(cont)
+                        self.currentData.remove(at: cont)
                         self.gridPokemon.reloadData()
                         cont = 0
                         
@@ -137,7 +137,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
                     cont = cont+1
                 }
                 if(cont == self.currentData.count){
-                    self.txtEntry.textColor = UIColor.redColor()
+                    self.txtEntry.textColor = UIColor.red
                 }
             }
             else{
@@ -146,28 +146,28 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         }
     }
     
-    func keyboardWillShow(sender: NSNotification) {
-        let offset = (sender.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue().height
+    func keyboardWillShow(_ sender: Notification) {
+        let offset = ((sender as NSNotification).userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.height
         
         self.view.frame.origin.y = self.view.frame.origin.y - offset
     }
     
-    func keyboardWillHide(sender: NSNotification) {
+    func keyboardWillHide(_ sender: Notification) {
         
         self.view.frame.origin.y = 0
         
     }
     
-    func fetchImagePath(name:String)->String!{
+    func fetchImagePath(_ name:String)->String!{
         var tmp = name
-        tmp.removeRange(name.endIndex.advancedBy(-4)..<name.endIndex)
+        tmp.removeSubrange(name.characters.index(name.endIndex, offsetBy: -4)..<name.endIndex)
         
-        let finalPath = NSBundle.mainBundle().pathForResource(tmp, ofType: "png")
+        let finalPath = Bundle.main.path(forResource: tmp, ofType: "png")
         
         return finalPath
     }
     
-    func calculateNewCellRect(previous:CGRect) -> CGRect{
+    func calculateNewCellRect(_ previous:CGRect) -> CGRect{
         
         let newSize = CGSize(width: ((self.size/2)-8), height: (((self.size/2)-8)*1.3))
         let newOrigin = CGPoint(x: (previous.origin.x+(newSize.width-previous.width)),y: ((previous.origin.y)+(newSize.height-previous.size.height)))
@@ -175,13 +175,13 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         return CGRect(origin: newOrigin,size: newSize)
     }
     
-    func getPokedex(region:String){
+    func getPokedex(_ region:String){
         self.currentData = jsonParser.getJsonData(region)
         self.pokedexSize = self.currentData.count
         self.data.removeAll()
     }
     
-    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+    func UIColorFromRGB(_ rgbValue: UInt) -> UIColor {
         return UIColor(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
@@ -190,13 +190,13 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         )
     }
     
-    func presentBanner(title:String, message:String){
+    func presentBanner(_ title:String, message:String){
         
-        let alert: UIAlertController = UIAlertController(title: title, message: message,preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "Close", style: .Cancel, handler: {(action:UIAlertAction) in alert.dismissViewControllerAnimated(true, completion: nil); self.navigationController?.popViewControllerAnimated(true)}))
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: {(action:UIAlertAction) in self.navigationItem.hidesBackButton = false }))
+        let alert: UIAlertController = UIAlertController(title: title, message: message,preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: {(action:UIAlertAction) in alert.dismiss(animated: true, completion: nil); self.navigationController?.popViewController(animated: true)}))
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action:UIAlertAction) in self.navigationItem.hidesBackButton = false }))
         
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
 
     }
     
@@ -204,7 +204,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     
     func timerManager(){
         self.secondsRemaining = 12*60
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(quizzoController.timerTick), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(quizzoController.timerTick), userInfo: nil, repeats: true)
     }
     
     func timerTick(){
@@ -222,7 +222,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     }
     
     func stopTimer(){
-        self.txtEntry.enabled = false
+        self.txtEntry.isEnabled = false
         self.timer.invalidate()
         self.presentBanner("Time is up!", message: "you completed \(self.data.count) out of \(self.pokedexSize)")
     }

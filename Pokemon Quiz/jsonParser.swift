@@ -11,19 +11,19 @@ import Foundation
 
 class jsonParser {
     
-    static func getJsonData(region:String) -> [NSDictionary]{
+    static func getJsonData(_ region:String) -> [NSDictionary]{
         
         var jsonData:[NSDictionary] = [NSDictionary()]
         
-        guard let path = NSBundle.mainBundle().pathForResource(region, ofType: "json") else {
+        guard let path = Bundle.main.path(forResource: region, ofType: "json") else {
             return jsonData
         }
         
-        let data: NSData = NSData(contentsOfURL: NSURL(fileURLWithPath: path))!
+        let data: Data = try! Data(contentsOf: URL(fileURLWithPath: path))
         
         do{
         
-        jsonData = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as! [NSDictionary]
+        jsonData = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions()) as! [NSDictionary]
         }catch{
             print(error)
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4090FE051D8F664600500382 /* quizzoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4090FE041D8F664600500382 /* quizzoController.swift */; };
 		40FB80B01D8CAA82003D2B01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB80AF1D8CAA82003D2B01 /* AppDelegate.swift */; };
 		40FB80B21D8CAA82003D2B01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB80B11D8CAA82003D2B01 /* ViewController.swift */; };
 		40FB80B51D8CAA82003D2B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FB80B31D8CAA82003D2B01 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		40FB80BD1D8CAA82003D2B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FB80BB1D8CAA82003D2B01 /* LaunchScreen.storyboard */; };
 		40FB80C81D8CAA83003D2B01 /* Pokemon_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB80C71D8CAA83003D2B01 /* Pokemon_QuizTests.swift */; };
 		40FB80D31D8CAA83003D2B01 /* Pokemon_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB80D21D8CAA83003D2B01 /* Pokemon_QuizUITests.swift */; };
-		40FB80E11D8CC00A003D2B01 /* quizzoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FB80E01D8CC00A003D2B01 /* quizzoController.swift */; };
 		40FB817E1D8CC2D6003D2B01 /* abra.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FB80E51D8CC2D5003D2B01 /* abra.png */; };
 		40FB817F1D8CC2D6003D2B01 /* aerodactyl.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FB80E61D8CC2D5003D2B01 /* aerodactyl.png */; };
 		40FB81801D8CC2D6003D2B01 /* alakazam.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FB80E71D8CC2D5003D2B01 /* alakazam.png */; };
@@ -193,6 +193,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4090FE041D8F664600500382 /* quizzoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizzoController.swift; sourceTree = "<group>"; };
 		40FB80AC1D8CAA82003D2B01 /* Pokemon Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40FB80AF1D8CAA82003D2B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40FB80B11D8CAA82003D2B01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -207,7 +208,6 @@
 		40FB80CE1D8CAA83003D2B01 /* Pokemon QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemon QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40FB80D21D8CAA83003D2B01 /* Pokemon_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon_QuizUITests.swift; sourceTree = "<group>"; };
 		40FB80D41D8CAA83003D2B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40FB80E01D8CC00A003D2B01 /* quizzoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = quizzoController.swift; sourceTree = "<group>"; };
 		40FB80E51D8CC2D5003D2B01 /* abra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = abra.png; path = ../../assets/img/kanto/abra.png; sourceTree = "<group>"; };
 		40FB80E61D8CC2D5003D2B01 /* aerodactyl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aerodactyl.png; path = ../../assets/img/kanto/aerodactyl.png; sourceTree = "<group>"; };
 		40FB80E71D8CC2D5003D2B01 /* alakazam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alakazam.png; path = ../../assets/img/kanto/alakazam.png; sourceTree = "<group>"; };
@@ -450,8 +450,8 @@
 		40FB80E21D8CC014003D2B01 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4090FE041D8F664600500382 /* quizzoController.swift */,
 				40FB80B11D8CAA82003D2B01 /* ViewController.swift */,
-				40FB80E01D8CC00A003D2B01 /* quizzoController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -947,9 +947,9 @@
 				40FB80B81D8CAA82003D2B01 /* Pokemon_Quiz.xcdatamodeld in Sources */,
 				40FB821C1D8CE012003D2B01 /* jsonParser.swift in Sources */,
 				40FB82251D8CF66D003D2B01 /* pokeCell.swift in Sources */,
+				4090FE051D8F664600500382 /* quizzoController.swift in Sources */,
 				40FB80B21D8CAA82003D2B01 /* ViewController.swift in Sources */,
 				40FB80B01D8CAA82003D2B01 /* AppDelegate.swift in Sources */,
-				40FB80E11D8CC00A003D2B01 /* quizzoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

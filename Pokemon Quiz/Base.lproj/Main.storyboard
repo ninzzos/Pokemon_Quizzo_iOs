@@ -123,34 +123,33 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kby-9x-Pn9">
-                                <rect key="frame" x="536" y="517" width="44" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcP-J6-PEW">
+                                <rect key="frame" x="534" y="518" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="NBP-83-G4m"/>
+                                    <constraint firstAttribute="width" constant="46" id="kU8-Bq-LG5"/>
                                 </constraints>
                                 <state key="normal" title="Add"/>
                                 <connections>
-                                    <action selector="btnAdd:" destination="u4c-V2-hlw" eventType="touchUpInside" id="7aD-4L-gxM"/>
+                                    <action selector="btnAddClick:" destination="u4c-V2-hlw" eventType="touchUpInside" id="irX-lm-Ile"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7u1-dl-I1S" firstAttribute="top" secondItem="h8j-Wd-71Z" secondAttribute="bottom" constant="8" symbolic="YES" id="6IP-3m-lZH"/>
-                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="baseline" secondItem="Kby-9x-Pn9" secondAttribute="baseline" id="7pX-hl-Hqa"/>
-                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="leading" secondItem="ejc-kG-YOB" secondAttribute="leadingMargin" id="C3K-uX-8B8"/>
+                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="leading" secondItem="ejc-kG-YOB" secondAttribute="leadingMargin" id="AGe-J2-5qt"/>
+                            <constraint firstItem="GcP-J6-PEW" firstAttribute="leading" secondItem="h8j-Wd-71Z" secondAttribute="trailing" constant="6" id="D5y-Uw-uH3"/>
                             <constraint firstItem="evi-qe-tGz" firstAttribute="top" secondItem="dno-CD-xvp" secondAttribute="bottom" id="HE0-cA-Yjr"/>
-                            <constraint firstItem="Kby-9x-Pn9" firstAttribute="top" secondItem="evi-qe-tGz" secondAttribute="bottom" constant="8" symbolic="YES" id="LVI-ig-lcN"/>
+                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="top" secondItem="GcP-J6-PEW" secondAttribute="top" id="HtF-1Q-iNR"/>
+                            <constraint firstItem="7u1-dl-I1S" firstAttribute="top" secondItem="h8j-Wd-71Z" secondAttribute="bottom" constant="8" symbolic="YES" id="Q6c-5y-XbX"/>
+                            <constraint firstItem="GcP-J6-PEW" firstAttribute="trailing" secondItem="ejc-kG-YOB" secondAttribute="trailingMargin" id="Qqb-u1-6QY"/>
                             <constraint firstAttribute="trailing" secondItem="evi-qe-tGz" secondAttribute="trailing" id="TCA-2Z-ez1"/>
-                            <constraint firstItem="Kby-9x-Pn9" firstAttribute="leading" secondItem="h8j-Wd-71Z" secondAttribute="trailing" constant="8" symbolic="YES" id="TGj-Ml-zg9"/>
+                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="top" secondItem="evi-qe-tGz" secondAttribute="bottom" constant="9" id="WI7-aC-nYi"/>
                             <constraint firstItem="evi-qe-tGz" firstAttribute="leading" secondItem="ejc-kG-YOB" secondAttribute="leading" id="pzU-c1-Ut1"/>
-                            <constraint firstItem="Kby-9x-Pn9" firstAttribute="trailing" secondItem="ejc-kG-YOB" secondAttribute="trailingMargin" id="zdF-6l-gbs"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="btnAdd" destination="Kby-9x-Pn9" id="1gz-qT-Amd"/>
                         <outlet property="gridPokemon" destination="evi-qe-tGz" id="EOd-cU-njj"/>
                         <outlet property="txtEntry" destination="h8j-Wd-71Z" id="oZT-15-5Un"/>
                     </connections>

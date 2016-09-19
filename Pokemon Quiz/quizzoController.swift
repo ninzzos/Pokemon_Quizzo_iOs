@@ -12,7 +12,6 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     
     @IBOutlet weak var gridPokemon: UICollectionView!
     @IBOutlet weak var txtEntry: UITextField!
-    @IBOutlet weak var btnAdd: UIButton!
     let size = (UIScreen.mainScreen().bounds.width)
     var pokedexSize:Int = 0
     var data:[NSDictionary] = [[:]]
@@ -57,10 +56,14 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         self.gridPokemon.dataSource = self
         self.gridPokemon.delegate = self
         self.txtEntry.delegate = self
-        self.btnAdd.addTarget(self, action: #selector(quizzoController.pokemonExists), forControlEvents: .TouchUpInside)
         
     }
-       
+    
+    //boton de mierda no funciona por un bug de xcode -.-
+    @IBAction func btnAddClick(sender:AnyObject){
+        self.presentBanner("Esta es una prueba", message: "osea, una prueba man")
+    }
+    
     //UICollectionView
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -220,7 +223,6 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     
     func stopTimer(){
         self.txtEntry.enabled = false
-        self.btnAdd.enabled = false
         self.timer.invalidate()
         self.presentBanner("Time is up!", message: "you completed \(self.data.count) out of \(self.pokedexSize)")
     }

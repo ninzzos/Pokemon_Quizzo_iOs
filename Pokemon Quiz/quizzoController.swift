@@ -12,6 +12,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     
     @IBOutlet weak var gridPokemon: UICollectionView!
     @IBOutlet weak var txtEntry: UITextField!
+    @IBOutlet weak var btnAdd: UIButton!
     let size = (UIScreen.main.bounds.width)
     var pokedexSize:Int = 0
     var data:[NSDictionary] = [[:]]
@@ -39,15 +40,10 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     var timer:Timer = Timer()
     
     override func viewDidLoad() {
+        self.navigationItem.hidesBackButton = true
         
-        let doneButton = UIBarButtonItem()
-        doneButton.title = "quit"
-        doneButton.action = #selector(quizzoController.stopTimer)
-        navigationItem.rightBarButtonItem = doneButton
-        navigationItem.hidesBackButton = true
-        
-        self.getPokedex("kanto")
         self.timerManager()
+        self.getPokedex("kanto")
         
         NotificationCenter.default.addObserver(self, selector: #selector(quizzoController.keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil);
         NotificationCenter.default.addObserver(self, selector: #selector(quizzoController.keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil);
@@ -61,7 +57,13 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     
     //boton de mierda no funciona por un bug de xcode -.-
     @IBAction func btnAddClick(_ sender:AnyObject){
-        self.presentBanner("Esta es una prueba", message: "osea, una prueba man")
+        
+        self.pokemonExists()
+    }
+    
+    @IBAction func btnQuitAction(_ sender: AnyObject) {
+        
+        self.stopTimer()
     }
     
     //UICollectionView
@@ -193,18 +195,30 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     func presentBanner(_ title:String, message:String){
         
         let alert: UIAlertController = UIAlertController(title: title, message: message,preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: {(action:UIAlertAction) in alert.dismiss(animated: true, completion: nil); self.navigationController?.popViewController(animated: true)}))
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action:UIAlertAction) in self.navigationItem.hidesBackButton = false }))
+        alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: {
+                                                                                    (action:UIAlertAction) in
+                                                                                        alert.dismiss(animated: true, completion: nil);
+                                                                                        self.navigationController!.popViewController(animated: true)
+                                                                                }))
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {
+                                                                                (action:UIAlertAction) in
+                                                                                    self.navigationItem.hidesBackButton = false;
+                                                                                    self.navigationItem.rightBarButtonItem?.isEnabled = false;
+                                                                            }))
         
         self.present(alert, animated: true, completion: nil)
 
     }
     
-    //timer shit should run on a different thread, but swift makes shit complicated -.-
+    // despues de un monton de stackoverflow, ya corre en el background thread
     
     func timerManager(){
+        
         self.secondsRemaining = 12*60
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(quizzoController.timerTick), userInfo: nil, repeats: true)
+        
+        RunLoop.main.add(timer, forMode: RunLoopMode.UITrackingRunLoopMode)
+        
     }
     
     func timerTick(){
@@ -223,6 +237,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     
     func stopTimer(){
         self.txtEntry.isEnabled = false
+        self.btnAdd.isEnabled = false
         self.timer.invalidate()
         self.presentBanner("Time is up!", message: "you completed \(self.data.count) out of \(self.pokedexSize)")
     }

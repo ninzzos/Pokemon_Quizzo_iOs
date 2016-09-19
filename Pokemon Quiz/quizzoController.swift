@@ -152,12 +152,14 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         let offset = ((sender as NSNotification).userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.height
         
         self.view.frame.origin.y = self.view.frame.origin.y - offset
+        
     }
     
     func keyboardWillHide(_ sender: Notification) {
+        //let offset = ((sender as NSNotification).userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.height
         
         self.view.frame.origin.y = 0
-        
+
     }
     
     func fetchImagePath(_ name:String)->String!{

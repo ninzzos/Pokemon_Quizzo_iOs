@@ -25,46 +25,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZe-tg-m1W">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7BP-Ul-x1Q"/>
-                                </constraints>
                                 <state key="normal" title="Start Quiz"/>
                                 <connections>
                                     <segue destination="u4c-V2-hlw" kind="show" id="P54-6j-7jW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSc-4q-wt7">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="NEl-O4-zBo"/>
-                                </constraints>
                                 <state key="normal" title="Regions"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMe-N3-ixI">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8Xf-Kv-qHT"/>
-                                </constraints>
                                 <state key="normal" title="About"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="MIN-gs-cSx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="1xI-vB-Qjs"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wMe-N3-ixI" secondAttribute="bottom" constant="340" id="DH4-hu-DAl"/>
-                            <constraint firstItem="wMe-N3-ixI" firstAttribute="top" secondItem="fSc-4q-wt7" secondAttribute="bottom" constant="8" symbolic="YES" id="DvV-N7-Wl7"/>
-                            <constraint firstItem="MIN-gs-cSx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E5T-np-eba"/>
-                            <constraint firstItem="MIN-gs-cSx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EGM-wo-Vdb"/>
-                            <constraint firstItem="fSc-4q-wt7" firstAttribute="top" secondItem="UZe-tg-m1W" secondAttribute="bottom" constant="8" symbolic="YES" id="Pay-ck-2uz"/>
-                            <constraint firstItem="fSc-4q-wt7" firstAttribute="centerX" secondItem="wMe-N3-ixI" secondAttribute="centerX" id="bmV-iK-8P2"/>
-                            <constraint firstItem="MIN-gs-cSx" firstAttribute="centerX" secondItem="UZe-tg-m1W" secondAttribute="centerX" id="jMH-Qa-Fa2"/>
-                            <constraint firstItem="UZe-tg-m1W" firstAttribute="centerX" secondItem="fSc-4q-wt7" secondAttribute="centerX" id="uR2-kT-j7x"/>
-                            <constraint firstItem="UZe-tg-m1W" firstAttribute="top" secondItem="MIN-gs-cSx" secondAttribute="bottom" constant="85" id="w2b-sa-pzo"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="06X-A8-saN"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5RT-0z-8qK"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AX3-TT-r9V"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="COn-lt-efl"/>
+                            <constraint firstItem="UZe-tg-m1W" firstAttribute="centerX" secondItem="MIN-gs-cSx" secondAttribute="centerX" id="EzU-1U-fDD"/>
+                            <constraint firstItem="UZe-tg-m1W" firstAttribute="centerX" secondItem="fSc-4q-wt7" secondAttribute="centerX" id="Gt6-Pl-ei8"/>
+                            <constraint firstItem="fSc-4q-wt7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SAO-sp-FNL"/>
+                            <constraint firstItem="fSc-4q-wt7" firstAttribute="centerX" secondItem="wMe-N3-ixI" secondAttribute="centerX" id="YR4-6o-5WT"/>
+                            <constraint firstItem="wMe-N3-ixI" firstAttribute="top" secondItem="fSc-4q-wt7" secondAttribute="bottom" constant="8" symbolic="YES" id="fMh-RH-Eqj"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="kV0-UJ-72F"/>
+                            <constraint firstItem="fSc-4q-wt7" firstAttribute="top" secondItem="UZe-tg-m1W" secondAttribute="bottom" constant="8" symbolic="YES" id="lCX-Pu-PpJ"/>
+                            <constraint firstItem="MIN-gs-cSx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xm0-9a-c9h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="31i-Fl-Wsw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.072463768116" y="349.72826086956525"/>
+            <point key="canvasLocation" x="1050.7246376811595" y="348.91304347826087"/>
         </scene>
         <!--Title-->
         <scene sceneID="wF4-9G-tHA">
@@ -81,17 +74,17 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="evi-qe-tGz">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="1" id="yuB-WH-MLh">
-                                    <size key="itemSize" width="184" height="180"/>
+                                    <size key="itemSize" width="159" height="159"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="16" minY="10" maxX="16" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="spatial" reuseIdentifier="gridCellTemplate" id="Am2-cj-S9s" customClass="pokeCell" customModule="Pokemon_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="10" width="180" height="180"/>
+                                        <rect key="frame" x="16" y="10" width="159" height="159"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cVh-59-DrP"/>
@@ -112,7 +105,7 @@
                                             <constraint firstItem="vOV-pO-juD" firstAttribute="leading" secondItem="Am2-cj-S9s" secondAttribute="leadingMargin" id="ehe-Zk-z26"/>
                                             <constraint firstAttribute="trailing" secondItem="cVh-59-DrP" secondAttribute="trailing" id="xwj-Mg-hrW"/>
                                         </constraints>
-                                        <size key="customSize" width="180" height="180"/>
+                                        <size key="customSize" width="159" height="159"/>
                                         <connections>
                                             <outlet property="imgDisplay" destination="cVh-59-DrP" id="f4K-xA-xo3"/>
                                             <outlet property="lblName" destination="vOV-pO-juD" id="Hx3-DM-jjk"/>
@@ -164,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMg-vj-1QU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718.840579710145" y="349.72826086956525"/>
+            <point key="canvasLocation" x="1717.3913043478262" y="348.91304347826087"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Naj-he-Th5">

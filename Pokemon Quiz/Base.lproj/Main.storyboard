@@ -71,20 +71,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="evi-qe-tGz">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="evi-qe-tGz">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="1" id="yuB-WH-MLh">
-                                    <size key="itemSize" width="159" height="159"/>
+                                    <size key="itemSize" width="183" height="168"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="16" minY="10" maxX="16" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="spatial" reuseIdentifier="gridCellTemplate" id="Am2-cj-S9s" customClass="pokeCell" customModule="Pokemon_Quiz" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="10" width="159" height="159"/>
+                                        <rect key="frame" x="16" y="10" width="183" height="168"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="183" height="168"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cVh-59-DrP"/>
@@ -105,7 +105,7 @@
                                             <constraint firstItem="vOV-pO-juD" firstAttribute="leading" secondItem="Am2-cj-S9s" secondAttribute="leadingMargin" id="ehe-Zk-z26"/>
                                             <constraint firstAttribute="trailing" secondItem="cVh-59-DrP" secondAttribute="trailing" id="xwj-Mg-hrW"/>
                                         </constraints>
-                                        <size key="customSize" width="159" height="159"/>
+                                        <size key="customSize" width="183" height="168"/>
                                         <connections>
                                             <outlet property="imgDisplay" destination="cVh-59-DrP" id="f4K-xA-xo3"/>
                                             <outlet property="lblName" destination="vOV-pO-juD" id="Hx3-DM-jjk"/>
@@ -119,7 +119,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8a-eR-MuK">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="a5w-RP-I5A"/>
+                                    <constraint firstAttribute="width" constant="46" id="ThE-fw-tY8"/>
                                 </constraints>
                                 <state key="normal" title="Add"/>
                                 <connections>
@@ -129,15 +129,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="evi-qe-tGz" firstAttribute="top" secondItem="dno-CD-xvp" secondAttribute="bottom" id="0Wa-lW-jpn"/>
-                            <constraint firstItem="z8a-eR-MuK" firstAttribute="trailing" secondItem="ejc-kG-YOB" secondAttribute="trailingMargin" id="1vS-GY-flQ"/>
-                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="top" secondItem="z8a-eR-MuK" secondAttribute="top" id="Bcm-Ri-E2l"/>
-                            <constraint firstItem="evi-qe-tGz" firstAttribute="leading" secondItem="ejc-kG-YOB" secondAttribute="leading" id="DDa-vI-YDg"/>
-                            <constraint firstAttribute="trailing" secondItem="evi-qe-tGz" secondAttribute="trailing" id="LAq-41-qBH"/>
-                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="leading" secondItem="ejc-kG-YOB" secondAttribute="leadingMargin" id="QFv-n8-I1L"/>
-                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="top" secondItem="evi-qe-tGz" secondAttribute="bottom" constant="8" symbolic="YES" id="gQC-RO-gf8"/>
-                            <constraint firstItem="z8a-eR-MuK" firstAttribute="leading" secondItem="h8j-Wd-71Z" secondAttribute="trailing" constant="8" symbolic="YES" id="lmc-fV-TdD"/>
-                            <constraint firstItem="7u1-dl-I1S" firstAttribute="top" secondItem="h8j-Wd-71Z" secondAttribute="bottom" constant="8" symbolic="YES" id="sIW-be-KfL"/>
+                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="leading" secondItem="ejc-kG-YOB" secondAttribute="leadingMargin" id="13d-lC-Iw1"/>
+                            <constraint firstItem="evi-qe-tGz" firstAttribute="leading" secondItem="ejc-kG-YOB" secondAttribute="leading" id="2dC-6Y-1qi"/>
+                            <constraint firstItem="z8a-eR-MuK" firstAttribute="trailing" secondItem="ejc-kG-YOB" secondAttribute="trailingMargin" id="4m8-7x-Mn2"/>
+                            <constraint firstItem="7u1-dl-I1S" firstAttribute="top" secondItem="h8j-Wd-71Z" secondAttribute="bottom" constant="8" symbolic="YES" id="6LH-Oz-z6v"/>
+                            <constraint firstAttribute="trailing" secondItem="evi-qe-tGz" secondAttribute="trailing" id="6LU-Wn-ult"/>
+                            <constraint firstItem="evi-qe-tGz" firstAttribute="top" secondItem="dno-CD-xvp" secondAttribute="bottom" id="Ay9-T2-aRP"/>
+                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="top" secondItem="z8a-eR-MuK" secondAttribute="top" id="Rek-YN-DWO"/>
+                            <constraint firstItem="z8a-eR-MuK" firstAttribute="leading" secondItem="h8j-Wd-71Z" secondAttribute="trailing" constant="8" symbolic="YES" id="j55-MH-asE"/>
+                            <constraint firstItem="h8j-Wd-71Z" firstAttribute="top" secondItem="evi-qe-tGz" secondAttribute="bottom" constant="8" symbolic="YES" id="y1K-8w-JNh"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -148,7 +148,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnAdd" destination="z8a-eR-MuK" id="F34-eY-yjk"/>
                         <outlet property="gridPokemon" destination="evi-qe-tGz" id="EOd-cU-njj"/>

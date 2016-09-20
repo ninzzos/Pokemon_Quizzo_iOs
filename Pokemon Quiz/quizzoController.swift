@@ -67,7 +67,6 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     }
     
     //UICollectionView
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -95,10 +94,15 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     }
     
     func scrollGridToBottom(){
-        let section:Int = (self.gridPokemon.numberOfSections-1)
-        let itemNumber:Int = collectionView(self.gridPokemon, numberOfItemsInSection: section)-1
-        let lastIndex:IndexPath = IndexPath(item: itemNumber, section: section)
-        self.gridPokemon.scrollToItem(at: lastIndex, at: UICollectionViewScrollPosition.bottom, animated: true)
+        DispatchQueue.main.async(execute: {
+            let section:Int = (self.gridPokemon.numberOfSections-1)
+            let itemNumber:Int = self.collectionView(self.gridPokemon, numberOfItemsInSection: section)-1
+            if(itemNumber >= 0){
+                let lastIndex:IndexPath = IndexPath(item: itemNumber, section: section)
+                self.gridPokemon.scrollToItem(at: lastIndex, at: UICollectionViewScrollPosition.bottom, animated: true)
+            }
+        })
+        
     }
     
     // TextField Delegate
@@ -113,14 +117,14 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     }
     
     //helper functions
-    
     func pokemonExists(){
         if(!self.txtEntry.text!.isEmpty){
             if(self.currentData.count > 0){
                 let entry:String = self.txtEntry.text!;
                 var cont:Int! = 0
                 for tmp in self.currentData {
-                    if(entry == tmp["name"] as! String || entry == tmp["alternative"] as! String){
+                    if(entry.compare((tmp["name"] as! String), options: String.CompareOptions.caseInsensitive, range: entry.startIndex..<entry.endIndex, locale: nil) == ComparisonResult.orderedSame || entry.compare((tmp["alternative"] as! String), options: String.CompareOptions.caseInsensitive, range: entry.startIndex..<entry.endIndex, locale: nil) == ComparisonResult.orderedSame){
+                    
                         self.txtEntry.text = ""
                         self.txtEntry.textColor = UIColor.black
                         self.data.append(tmp)
@@ -130,6 +134,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
                         
                         //now scroll shit there
                         self.scrollGridToBottom()
+                        
                         //update the hint
                         self.txtEntry.placeholder = "\(self.data.count)/\(self.pokedexSize)"
                         
@@ -147,15 +152,15 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         }
     }
     
-    
     //hacer que el gridview baje
     func keyboardWillShow(_ sender: Notification) {
         if(self.offset == -1.0){
             self.offset = ((sender as NSNotification).userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.height
         }
         self.view.frame.origin.y = self.view.frame.origin.y - offset
-        
         self.gridPokemon.contentInset = UIEdgeInsets(top: self.offset, left: 0, bottom: 0, right: 0)
+        self.gridPokemon.scrollIndicatorInsets = UIEdgeInsets(top: self.offset, left: 0, bottom: 0, right: 0)
+        //self.gridPokemon.contentSize = CGSize(width: self.gridPokemon.contentSize.width, height: self.gridPokemon.contentSize.height+offset)
         
     }
     
@@ -163,6 +168,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         
         self.view.frame.origin.y = 0
         self.gridPokemon.contentInset = UIEdgeInsets.zero
+        self.gridPokemon.scrollIndicatorInsets = UIEdgeInsets.zero
     }
     
     func fetchImagePath(_ name:String)->String!{
@@ -172,15 +178,6 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         let finalPath = Bundle.main.path(forResource: tmp, ofType: "png")
         
         return finalPath
-    }
-    
-    //no lo estoy usando, probablemente ni funcione
-    func calculateNewCellRect(_ previous:CGRect) -> CGRect{
-        
-        let newSize = CGSize(width: ((self.size/2)-8), height: (((self.size/2)-8)*1.3))
-        let newOrigin = CGPoint(x: (previous.origin.x+(newSize.width-previous.width)),y: ((previous.origin.y)+(newSize.height-previous.size.height)))
-        
-        return CGRect(origin: newOrigin,size: newSize)
     }
     
     func getPokedex(_ region:String){
@@ -217,7 +214,6 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     }
     
     // despues de un monton de stackoverflow, ya corre en el background thread
-    
     func timerManager(){
         
         self.secondsRemaining = 12*60
@@ -247,5 +243,4 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         self.timer.invalidate()
         self.presentBanner("Time is up!", message: "you completed \(self.data.count) out of \(self.pokedexSize)")
     }
-
 }

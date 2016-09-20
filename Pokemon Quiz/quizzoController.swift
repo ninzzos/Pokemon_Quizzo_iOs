@@ -14,6 +14,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
     @IBOutlet weak var txtEntry: UITextField!
     @IBOutlet weak var btnAdd: UIButton!
     let size = (UIScreen.main.bounds.width)
+    var offset:CGFloat = -1.0
     var pokedexSize:Int = 0
     var data:[NSDictionary] = [[:]]
     var currentData:[NSDictionary] = [[:]]
@@ -55,7 +56,6 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         
     }
     
-    //boton de mierda no funciona por un bug de xcode -.-
     @IBAction func btnAddClick(_ sender:AnyObject){
         
         self.pokemonExists()
@@ -86,7 +86,6 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         
         cell.lblName.text = (currentItem["name"] as! String)
         cell.imgDisplay.image = UIImage(contentsOfFile: self.fetchImagePath(imgPath))
-        
         
         let type:String! = (currentItem["types"] as! NSArray?)?.object(at: 0) as! String
         
@@ -148,18 +147,22 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         }
     }
     
+    
+    //hacer que el gridview baje
     func keyboardWillShow(_ sender: Notification) {
-        let offset = ((sender as NSNotification).userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.height
-        
+        if(self.offset == -1.0){
+            self.offset = ((sender as NSNotification).userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.height
+        }
         self.view.frame.origin.y = self.view.frame.origin.y - offset
+        
+        self.gridPokemon.contentInset = UIEdgeInsets(top: self.offset, left: 0, bottom: 0, right: 0)
         
     }
     
     func keyboardWillHide(_ sender: Notification) {
-        //let offset = ((sender as NSNotification).userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.height
         
         self.view.frame.origin.y = 0
-
+        self.gridPokemon.contentInset = UIEdgeInsets.zero
     }
     
     func fetchImagePath(_ name:String)->String!{
@@ -171,6 +174,7 @@ class quizzoController : ViewController, UITextFieldDelegate,UICollectionViewDel
         return finalPath
     }
     
+    //no lo estoy usando, probablemente ni funcione
     func calculateNewCellRect(_ previous:CGRect) -> CGRect{
         
         let newSize = CGSize(width: ((self.size/2)-8), height: (((self.size/2)-8)*1.3))
